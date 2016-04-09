@@ -10,10 +10,19 @@
 - [X] Create project structure in IntelliJ, including logging and testing
 
 ### Week 9
-- [ ] Add web service logic 
-- [ ] 
-- [ ] 
+- [X] Add web service logic
+- [X] Add main string manipulation logic
+- [X] Test logic
 
 ### Week 10
-- [ ] Deploy the service to OpenShift.
-- [ ] Group presentation.
+- [X] Refactor web service
+- [X] Create Maven project
+
+### Week 11
+- [X] Deploy project to OpenShift
+- [X] Write documentation
+
+### Week 12
+- [ ] Create JavaDoc
+- [ ] Perform user tests
+- [ ] Group presentation

@@ -18,8 +18,15 @@ public class CVR {
 
     public String processString(String string) {
         String[] tokens = createTokens(string);
+        String[] tokensHyphen = createTokensHyphen(string);
         String translatedString = string;
+
         for (String token : tokens) {
+            String newToken = checkToken(token);
+            translatedString = translatedString.replace(token, newToken);
+        }
+
+        for (String token : tokensHyphen) {
             String newToken = checkToken(token);
             translatedString = translatedString.replace(token, newToken);
         }
@@ -34,6 +41,11 @@ public class CVR {
      */
     public String[] createTokens(String string) {
         String[] tokenArray = string.split("\\W");
+        return tokenArray;
+    }
+
+    public String[] createTokensHyphen(String string) {
+        String[] tokenArray = string.split("\\s");
         return tokenArray;
     }
 

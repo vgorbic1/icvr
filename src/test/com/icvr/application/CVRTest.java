@@ -21,16 +21,23 @@ public class CVRTest {
         cvr = new CVR(properties);
     }
 
+    @Test
     public void testProcessString() throws Exception {
-
+        String string = "equipment's, test. pan-pan";
+        string = cvr.processString(string);
+        assertEquals(string, "airplane's, test. urgency signal");
     }
 
+    @Test
     public void testCreateTokens() throws Exception {
-
+        String [] tokenList = cvr.createTokens("test, test.");
+        assertEquals(tokenList.length, 3);
     }
 
+    @Test
     public void testCheckToken() throws Exception {
-
+        String translatedToken = cvr.checkToken("equipment");
+        assertEquals(translatedToken, "airplane");
     }
 
     /**

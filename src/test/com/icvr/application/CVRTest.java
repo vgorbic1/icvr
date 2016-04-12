@@ -25,13 +25,14 @@ public class CVRTest {
     public void testProcessString() throws Exception {
         String string = "equipment's, test. pan-pan";
         string = cvr.processString(string);
+        log.info(string);
         assertEquals(string, "airplane's, test. urgency signal");
     }
 
     @Test
     public void testCreateTokens() throws Exception {
-        String [] tokenList = cvr.createTokens("test, test.");
-        assertEquals(tokenList.length, 3);
+        String [] tokenList = cvr.createTokensWord("test, test.");
+        assertEquals(tokenList.length, 2);
     }
 
     @Test

@@ -23,6 +23,6 @@
 - [X] Write documentation
 
 ### Week 12
-- [ ] Create JavaDoc
-- [ ] Perform user tests
+- [X] Create JavaDoc
+- [X] Perform user tests
 - [ ] Group presentation

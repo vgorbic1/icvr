@@ -32,7 +32,7 @@ public class CVRTest {
     @Test
     public void testCreateTokens() throws Exception {
         String [] tokenList = cvr.createTokensWord("test, test.");
-        assertEquals(tokenList.length, 2);
+        assertEquals(tokenList.length, 3);
     }
 
     @Test

@@ -10,13 +10,24 @@ import javax.ws.rs.core.Context;
 @Path("/service")
 public class Service {
 
+    /*
+    * @Context - Context of the resource
+     */
     @Context ServletContext context;
 
-    private String processUserInput(String userInput) {
+    public String processUserInput(String userInput) {
         CVR cvr = (CVR) context.getAttribute("properties");
         return cvr.processString(userInput.toLowerCase());
     }
 
+
+    /*
+    * JAX-RS
+    * @GET          - HTTP Get request, used to fetch resource
+    * @Path         - Path of the resource method
+    * @Produces     - HTTP Response type
+    * @PathParam    - Maps variable URI path into method call
+     */
     @GET
     @Path("/txt/{param}")
     @Produces("text/plain")

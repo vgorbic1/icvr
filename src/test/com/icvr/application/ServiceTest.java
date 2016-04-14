@@ -6,7 +6,10 @@ import org.junit.Test;
 
 
 import javax.servlet.ServletContext;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import java.io.IOException;
 import java.util.Properties;
@@ -21,33 +24,19 @@ import static org.junit.Assert.*;
 public class ServiceTest {
     private final Logger log = Logger.getLogger(this.getClass());
     Properties properties;
-
-    @Context
-    ServletContext context;
-    //Service s =  new Service();
-
-
-    /*  private String processUserInput(String userInput) */
-
-    /*
-
-    public String outputPlainMessage(@PathParam("param") String userInput) {
-        return processUserInput(userInput);
-    }
-
-    */
-
+    CVR cvr;
+    Service s;
 
     @Before
     public void setUp() throws Exception {
-        //Service s = new Service();
+        this.cvr = new CVR();
     }
 
     @Test
     public void testOutputPlainMessage() throws Exception {
-        Service s = new Service();
+        s = new Service();
         String user_input = "cvr demo";
-        s.outputPlainMessage(user_input);
+        s.outputPlainMessage("demo");
 
         /*
         Service s = new Service();

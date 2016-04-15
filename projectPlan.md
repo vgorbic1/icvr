@@ -25,5 +25,5 @@
 ### Week 12
 - [X] Create JavaDoc
 - [X] Perform user tests
-- [ ] Powerpoint - in progress - https://docs.google.com/presentation/d/1VU8SwAOMYiw8mLmtzFJbBXIsIBNuoyb4zS-viVacvfs/edit?usp=sharing
-- [ ] Group presentation
+- [X] [Powerpoint](https://docs.google.com/presentation/d/1VU8SwAOMYiw8mLmtzFJbBXIsIBNuoyb4zS-viVacvfs/edit?usp=sharing)
+- [X] Group presentation

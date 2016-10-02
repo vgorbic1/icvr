@@ -1,7 +1,7 @@
 # iCVR
 Cockpit Voice Recorder - RESTful API. Team Project by Isaac, Connor, Vlad, and Ran.
 
-![cvr](https://github.com/vgorbic1/CVR/blob/master/images/pilot.png)
+![cvr](https://github.com/vgorbic1/icvr/blob/master/images/pilot.png)
 
 ### Problem Statement
 
